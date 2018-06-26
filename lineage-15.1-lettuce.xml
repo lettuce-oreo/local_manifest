@@ -12,4 +12,3 @@
 <project path="device/cyanogen/msm8916-common" name="android_device_cyanogen_msm8916-common" />
 <project path="vendor/yu" name="proprietary_vendor_yu" />
 <project path="kernel/cyanogen/msm8916" name="android_kernel_cyanogen_msm8916" />
-<project path="build/make" name="android_build" />
