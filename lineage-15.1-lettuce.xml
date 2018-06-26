@@ -2,14 +2,14 @@
 <manifest>
 
   <remote  name="local"
-           fetch="https://github.com/LOS-lettuce/"
+           fetch="https://github.com/lettuce-oreo/"
            revision="lineage-15.1" />
 
-  <default revision="linege-15.1" 
+  <default revision="lineage-15.1" 
            remote="local" />
 
 <project path="device/yu/lettuce" name="android_device_yu_lettuce" />
 <project path="device/cyanogen/msm8916-common" name="android_device_cyanogen_msm8916-common" />
 <project path="vendor/yu" name="proprietary_vendor_yu" />
-<project path="kernel/cyanogen/msm8916" name="android_kernel_cyanogen_msm8916" revision="lineage-15.1-minimal" />
+<project path="kernel/cyanogen/msm8916" name="android_kernel_cyanogen_msm8916" />
 <project path="build/make" name="android_build" />
