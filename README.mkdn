@@ -14,7 +14,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 4. Now create a local_manifests dir and copy the required manifests in that folder.
  ```
     mkdir .repo/local_manifests
-    wget -O .repo/local_manifests/lettuce.xml 'https://raw.githubusercontent.com/LOS-lettuce/android_manifest/lineage-15.1/lineage-15.1-lettuce.xml'
+    wget -O .repo/local_manifests/lettuce.xml https://github.com/lettuce-oreo/local_manifest/raw/lineage-15.1/lineage-15.1-lettuce.xml
  ```
 5. Then to sync up:
  ```
