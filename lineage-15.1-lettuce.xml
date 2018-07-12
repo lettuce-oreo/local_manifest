@@ -17,6 +17,7 @@
   <remove-project name="platform/compatibility/cdd" />
   <remove-project name="platform/cts" />
   <remove-project name="platform/developers/build" />
+  <remove-project name="platform_testing" />
 
   <remove-project name="device/common" />
   <remove-project name="device/generic/arm64" />
