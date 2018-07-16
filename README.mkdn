@@ -20,6 +20,10 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
  ```
     repo sync -f --force-sync
  ```
+   OR a more data-saving way to sync (but may cause errors later): :
+ ```
+    repo sync -c -f --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune
+ ```
 6. Build it !
  ```
     . build/envsetup.sh
