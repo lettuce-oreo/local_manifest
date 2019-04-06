@@ -6,22 +6,21 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 1. Set up your environment (use any of the hundreds of guides out there on XDA)
 
-3. Initialize repo of the required ROM, for example crDroid
+3. Initialize repo of the required ROM
  ```
-    mkdir lineage && cd lineage
-    repo init -u https:/github.com/crdroidandroid/android/ -b 8.1
+    mkdir dot 
+    repo init -u repo init -u git://github.com/DotOS/manifest.git -b dot-o
  ```
-4. Now create a local_manifests dir and copy the required manifests in that folder.
+4. Then to sync up:
  ```
-    mkdir .repo/local_manifests
-    wget -O .repo/local_manifests/lettuce.xml 'https://raw.githubusercontent.com/LOS-lettuce/android_manifest/crdroid-8.1/crdroid-8.1-lettuce.xml'
+    repo sync  -f --force-sync --no-clone-bundle
+
  ```
-5. Then to sync up:
+5. Build it !
  ```
-    repo sync -f --force-sync
- ```
-6. Build it !
- ```
-    . build/envsetup.sh
-    lunch lineage_lettuce-userdebug && mka bacon
+    source build/envsetup.sh
+   
+    lunch dot_lettuce-userdebug
+       
+   	brunch lettuce
  ```
