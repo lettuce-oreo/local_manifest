@@ -8,19 +8,16 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 3. Initialize repo of the required ROM
  ```
-    mkdir dot 
-    repo init -u repo init -u git://github.com/DotOS/manifest.git -b dot-o
+mkdir dot 
+repo init -u repo init -u git://github.com/DotOS/manifest.git -b dot-o
  ```
 4. Then to sync up:
  ```
-    repo sync  -f --force-sync --no-clone-bundle
-
+repo sync  -f --force-sync --no-clone-bundle
  ```
 5. Build it !
  ```
-    source build/envsetup.sh
-   
-    lunch dot_lettuce-userdebug
-       
-   	brunch lettuce
+source build/envsetup.sh
+lunch dot_lettuce-userdebug
+brunch lettuce
  ```
