@@ -1,31 +1,8 @@
-Getting Started
----------------
+How To Use Script
+-----------------
 
-To get started with Android, you'll need to get
-familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
+```
+bash <(curl -s https://raw.githubusercontent.com/lettuce-oreo/local_manifest/bash/lettuce.sh)
 
-1. Set up your environment (use any of the hundreds of guides out there on XDA)
+ ```
 
-3. Initialize repo of the required ROM, for example LineageOS
- ```
-    mkdir lineage && cd lineage
-    repo init -u https:/github.com/LineageOS/android/ -b lineage-15.1
- ```
-4. Now create a local_manifests dir and copy the required manifests in that folder.
- ```
-    mkdir .repo/local_manifests
-    wget -O .repo/local_manifests/lettuce.xml https://github.com/lettuce-oreo/local_manifest/raw/lineage-15.1/lineage-15.1-lettuce.xml
- ```
-5. Then to sync up:
- ```
-    repo sync -f --force-sync
- ```
-   OR a more data-saving way to sync (but may cause errors later): :
- ```
-    repo sync -c -f --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune
- ```
-6. Build it !
- ```
-    . build/envsetup.sh
-    lunch lineage_lettuce-userdebug && mka bacon
- ```
