@@ -3,6 +3,5 @@ How To Use Script
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/lettuce-oreo/local_manifest/bash/lettuce.sh)
-
  ```
 
